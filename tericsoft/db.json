@@ -1,0 +1,40 @@
+{
+  "employee": [
+    {
+      "name": "Ravi Ranjan",
+      "age": "25",
+      "phone": "8804236596",
+      "dob": "1990-03-15",
+      "gender": "male",
+      "hobbies": "singing",
+      "id": 1
+    },
+    {
+      "name": "Ranu Singh",
+      "age": "28",
+      "phone": "8987154875",
+      "dob": "1991-02-07",
+      "gender": "male",
+      "hobbies": "travelling",
+      "id": 2
+    },
+    {
+      "name": "Pappu Singh",
+      "age": "22",
+      "phone": "8806454644",
+      "dob": "1996-04-17",
+      "gender": "male",
+      "hobbies": "Writing",
+      "id": 3
+    },
+    {
+      "name": "Lucky Singh",
+      "age": "18",
+      "phone": "9665689856",
+      "dob": "2008-06-25",
+      "gender": "female",
+      "hobbies": "singing",
+      "id": 4
+    }
+  ]
+}
