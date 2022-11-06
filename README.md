@@ -11,18 +11,17 @@ Hello readers this is my Employee database management system.
 #run npm i to install node modules
 #run npm start to run the app.
 
-## Tools or Packages For Project 
-# Material Ui (5.10.12)
-# React (18.2.0)
-# Redux (4.2.0)
-# axios (1.1.3)
-# json-server (0.17.1)
-# react-icons (4.6.0)
-# react-redux (8.0.5)
-# react-router-dom (6.4.3)
-# redux-thunk (2.4.2)
-#
-#
+# Tools or Packages For Project 
+### Material Ui (5.10.12)
+### React (18.2.0)
+### Redux (4.2.0)
+### axios (1.1.3)
+### json-server (0.17.1)
+### react-icons (4.6.0)
+### react-redux (8.0.5)
+### react-router-dom (6.4.3)
+### redux-thunk (2.4.2)
+
     
     
     
