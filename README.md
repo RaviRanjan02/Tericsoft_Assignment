@@ -5,7 +5,7 @@ Hello readers this is my Employee database management system.
 
 ### **Deployed Link** :https://tericsoft-assignment-psi.vercel.app/
 
-#To run this project do the following steps:
+# To run this project do the following steps.
 #download the zip file.
 <br/>
 #open the file to local system.
