@@ -5,12 +5,16 @@ Hello readers this is my Employee database management system.
 
 ### **Deployed Link** :https://tericsoft-assignment-psi.vercel.app/
 
-## To run this project do the following steps:
+#To run this project do the following steps:
 #download the zip file.
-#open the file to local system
-#run npm i to install node modules
+<br/>
+#open the file to local system.
+<br/>
+#run npm i to install node modules.
+<br/>
 #run npm start to run the app.
-
+<br/>
+<br/>
 # Tools or Packages For Project 
 ### Material Ui (5.10.12)
 ### React (18.2.0)
