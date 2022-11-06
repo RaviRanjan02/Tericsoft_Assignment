@@ -69,8 +69,8 @@ const EmployeeTable = () => {
 
   const {id} = useParams()
 
-  const handleEdit = () => {
-    const paylod ={
+  const handleEdit = (id) => {
+    const payload ={
       name,
       age,
       phone,
@@ -78,7 +78,8 @@ const EmployeeTable = () => {
       gender,
       hobbies
     }
-    dispatch(editEmployee(paylod,id)).then((res) => {
+    dispatch(editEmployee(payload,id))
+    .then((res) => {
       if(res.type == UPDATE_EMPLOYEE_SUCCESS){
         dispatch(getEmployee())
       }
@@ -133,7 +134,7 @@ const EmployeeTable = () => {
             {/* table body */}
 
             {employeeData.length > 0 &&
-              employeeData.map((el,id) => {
+              employeeData.map((el) => {
                 return (
                   <TableBody key={el.id}>
                     <TableCell>{el.id}</TableCell>
@@ -148,7 +149,7 @@ const EmployeeTable = () => {
                         variant="contained"
                         size="small"
                         onClick={handleOpen}
-                        id={el.id}
+                        key={el.id}
                       >
                         Edit
                       </Button>
@@ -187,7 +188,7 @@ const EmployeeTable = () => {
               <TextField
                 label="Name"
                 name="name"
-                
+                value={name}
                 onChange={(e) => setName(e.target.value)}
                 variant="outlined"
                 type={"text"}
@@ -199,7 +200,7 @@ const EmployeeTable = () => {
               <TextField
                 label="Age"
                 name="age"
-                
+                value={age}
                 onChange={(e) => setAge(e.target.value)}
                 variant="outlined"
                 type={"text"}
@@ -211,7 +212,7 @@ const EmployeeTable = () => {
               <TextField
                 label="Phone"
                 name="phone"
-                
+                value={phone}
                 onChange={(e) => setPhone(e.target.value)}
                 variant="outlined"
                 type={"text"}
@@ -224,7 +225,7 @@ const EmployeeTable = () => {
                 variant="outlined"
                 type={"date"}
                 name="date"
-                
+                value={dob}
                 onChange={(e) => setDob(e.target.value)}
                 sx={{ width: "80%" }}
               />
@@ -268,30 +269,30 @@ const EmployeeTable = () => {
             <Box sx={{ width: "90%", margin: "0 auto" }}>
               <FormControl>
                 <FormLabel>Hobbies</FormLabel>
-                <FormGroup row name="hobbies" onChange={(e) => setHobbies(e.target.value)}>
+                <FormGroup row name="hobbies" value={hobbies} onChange={(e) => setHobbies(e.target.value)}>
                   <FormControlLabel
-                    
+                    value={hobbies}
                     onChange={(e) => setHobbies(e.target.value)}
                     control={<Checkbox />}
                     label="Travelling"
                     labelPlacement="end"
                   />
                   <FormControlLabel
-                    
+                    value={hobbies}
                     onChange={(e) => setHobbies(e.target.value)}
                     control={<Checkbox />}
                     label="Singing"
                     labelPlacement="end"
                   />
                   <FormControlLabel
-                    
+                    value={hobbies}
                     onChange={(e) => setHobbies(e.target.value)}
                     control={<Checkbox />}
                     label="Reading"
                     labelPlacement="end"
                   />
                   <FormControlLabel
-                    
+                    value={hobbies}
                     onChange={(e) => setHobbies(e.target.value)}
                     control={<Checkbox />}
                     label="Writing"
